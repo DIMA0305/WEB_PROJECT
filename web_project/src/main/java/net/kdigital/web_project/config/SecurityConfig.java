@@ -25,7 +25,7 @@ public class SecurityConfig {
 		return (web) -> web.ignoring().requestMatchers("/favicon.ico", "/error");
 	};
 
-	@Bean
+	@Bean 
 	SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		// 웹 요청에 대한 접근권한 설정
 		http
